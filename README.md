@@ -10,14 +10,14 @@
 ### 安装：
 
 ```
-pip install webenchmark
+pip install wangdachui
 ```
 
 ### 命令行选项：
 
 ```shell
-NikanMacBookPro:~ nikan$ webenchmark
-usage: webenchmark [-h] [-c CONCURRENCY] [-n TOTAL_REQUESTS] [-m METHOD]
+NikanMacBookPro:~ nikan$ wangdachui
+usage: wangdachui [-h] [-c CONCURRENCY] [-n TOTAL_REQUESTS] [-m METHOD]
                    [-f FILE_PATH] [-d DATA] [-j JSON] [-t TIMEOUT] [-k]
                    [-a AUTH] [-H HEADERS] [-C COOKIES] [--version]
                    urls [urls ...]
@@ -54,32 +54,32 @@ optional arguments:
 
 ```shell
 # 对单个请求进行get测试
-webenchmark -c 10 -n 30 https://www.baidu.com
+wangdachui -c 10 -n 30 https://www.baidu.com
 # 允许keep-alive
-webenchmark -k -c 10 -n 30 https://www.baidu.com
+wangdachui -k -c 10 -n 30 https://www.baidu.com
 # 设置超时时间（整数）
-webenchmark -t 1 -c 10 -n 30 https://www.baidu.com
+wangdachui -t 1 -c 10 -n 30 https://www.baidu.com
 # 对多个URL进行混合请求
-webenchmark -c 10 -n 30 https://www.baidu.com http://example.com/ https://www.taobao.com/
+wangdachui -c 10 -n 30 https://www.baidu.com http://example.com/ https://www.taobao.com/
 # basic auth
-webenchmark -a basic:test_user:test_password http://example.com/
+wangdachui -a basic:test_user:test_password http://example.com/
 # digest auth
-webenchmark -a digest:test_user:test_passtest_password http://example.com/
+wangdachui -a digest:test_user:test_passtest_password http://example.com/
 
 # post json
-webenchmark -m POST -j "{'test':'test_json'}" -c 10 -n 100 http://example.com/ 
+wangdachui -m POST -j "{'test':'test_json'}" -c 10 -n 100 http://example.com/ 
 
 # post data
-webenchmark -m POST -j "{'test':'test_json'}" -c 10 -n 100 http://example.com/ 
+wangdachui -m POST -j "{'test':'test_json'}" -c 10 -n 100 http://example.com/ 
 
 # Headers和Cookies
-webenchmark -H "{'user-agent':'hahah'}" -C "{'a':'1'}" http://example.com/
+wangdachui -H "{'user-agent':'hahah'}" -C "{'a':'1'}" http://example.com/
 ```
 
 输出示例：
 
 ```shell
-NikanMacBookPro:~ nikan$ webenchmark -c 10 -n 30 https://www.baidu.com
+NikanMacBookPro:~ nikan$ wangdachui -c 10 -n 30 https://www.baidu.com
 正在进行压测.....
 压测结果========================
 并发数：                10
