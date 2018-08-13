@@ -14,7 +14,7 @@ from setuptools import find_packages, setup, Command
 # Package meta-data.
 NAME = 'webenchmark'
 DESCRIPTION = '命令行下的HTTP压测工具'
-URL = 'https://github.com/nikan1996/Webenchmark'
+URL = 'https://github.com/EigenLab/WangDaChui'
 EMAIL = '859905874@qq.com'
 AUTHOR = 'Ni Kan'
 # REQUIRES_PYTHON = '>=2.6, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*'
