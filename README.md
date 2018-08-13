@@ -1,4 +1,4 @@
-# 一款基于命令行的网站压测小工具Webenchmark
+# 一款基于命令行的网站接口压测小工具-王大锤
 + 支持HTTP GET, POST, PUT, DELETE, HEAD操作
 + 支持长连接
 + 支持多个URL混合测试
