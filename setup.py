@@ -108,7 +108,7 @@ setup(
     py_modules=['bench'],
 
     entry_points={
-        'console_scripts': ['webenchmark = bench:run']
+        'console_scripts': ['wangdachui = bench:run']
     },
     install_requires=REQUIRED,
     extras_require=EXTRAS,
