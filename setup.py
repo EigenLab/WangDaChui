@@ -12,7 +12,7 @@ from shutil import rmtree
 from setuptools import find_packages, setup, Command
 
 # Package meta-data.
-NAME = 'webenchmark'
+NAME = 'wangdachui'
 DESCRIPTION = '命令行下的HTTP压测工具'
 URL = 'https://github.com/EigenLab/WangDaChui'
 EMAIL = '859905874@qq.com'
