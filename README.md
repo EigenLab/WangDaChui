@@ -59,7 +59,7 @@ wangdachui -c 10 -n 30 https://www.baidu.com
 wangdachui -k -c 10 -n 30 https://www.baidu.com
 # 设置超时时间（整数）
 wangdachui -t 1 -c 10 -n 30 https://www.baidu.com
-# 对多个URL进行混合请求
+# 对多个URL进行混合请求, 例子中每个url将会平均分配到15个请求
 wangdachui -c 10 -n 30 https://www.baidu.com http://example.com/ https://www.taobao.com/
 # basic auth
 wangdachui -a basic:test_user:test_password http://example.com/
